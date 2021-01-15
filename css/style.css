@@ -2,4 +2,86 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nerko One", cursive;
+  background-color: #acedef;
+  text-shadow: 2px 2px darkgrey;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* titolo */
+
+header {
+  width: auto;
+  height: 200px;
+  text-align: center;
+}
+
+header > strong {
+  color: white;
+  font-size: 70px;
+}
+
+/* main */
+main {
+  width: auto;
+  height: 70%;
+  margin: auto;
+}
+
+.mega_div {
+  width: 1025px;
+  height: 915px;
+  margin: auto;
+
+}
+
+.riga {
+  position: relative;
+  width: 1025px;
+  height: 300px;
+  margin: auto;
+}
+
+.riga > div{
+  position: absolute;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 3px 3px darkgrey;
+  background-image: url("../img/pattern.png");
+  background-repeat: round;
+}
+
+.riga div:first-child {
+  left: 5px;
+}
+
+.riga div:nth-child(2) {
+  left: 260px;
+}
+
+.riga div:nth-child(3) {
+  right: 260px;
+}
+
+.riga div:last-child {
+  right: 5px;
+}
+
+
+/* footer */
+
+footer {
+  width: auto;
+  height: 10%;
+  text-align: center;
+}
+
+footer > strong {
+  font-size: 20px;
 }
