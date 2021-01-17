@@ -23,9 +23,11 @@ header {
 header > h1 {
   color: white;
   font-size: 70px;
+  padding-top: 40px;
 }
 
 /* main */
+
 main {
   width: auto;
   height: 70%;
@@ -33,41 +35,18 @@ main {
 }
 
 .mega_div {
+  position: relative;
   width: 1025px;
-  height: 915px;
   margin: auto;
-
 }
 
 .riga {
-  position: relative;
   width: 1025px;
   height: 300px;
   margin: auto;
 }
 
-.riga > div, .memo > img, .pattern {
-  position: absolute;
-  display: inline-block;
-  background-color: white;
-  width: 250px;
-  height: 250px;
-  border-radius: 10px;
-  transition-duration: 0.2s;
-  transform-style: preserve-3d;
-  box-shadow: 3px 3px darkgrey;
-  background-repeat: round;
-}
-
-.back > img{
-  position: absolute;
-  display: inline-block;
-  background-color: white;
-  width: 200px;
-  height: 200px;
-  left: 30px;
-  top: 10px
-}
+/* CARTE */
 
 .riga div:first-child {
   left: 5px;
@@ -85,35 +64,45 @@ main {
   right: 5px;
 }
 
+.riga > .memo, .memo > img, .pattern {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  transform-style: preserve-3d;
+  box-shadow: 3px 3px darkgrey;
+}
+
+.back > img{
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  left: 30px;
+  top: 10px
+}
+
 .memo:hover {
   transform: rotateY(180deg);
 }
 
-
-.front {
-  backface-visibility: hidden;
-}
-
 .back {
+  color: red;
   background-color: white;
-  width: 250px;
   height: 250px;
   border-radius: 10px;
-  color: red;
-  backface-visibility: hidden;
   transform: rotateY(180deg);
 }
 
 strong {
-  background: rgba(0, 0, 0, 0);
-  display: inline-block;
   position: absolute;
-  text-align: center;
-  bottom: 10px;
-  left: 90px;
-  z-index: 1;
+  background: rgba(0, 0, 0, 0);
+  font-size: 20px;
+  bottom: 10%;
+  left: 25%;
 }
-
 
 /* footer */
 
