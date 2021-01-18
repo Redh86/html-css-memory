@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nerko One", cursive;
-  background-color: #acedef;
-  text-shadow: 2px 2px darkgrey;
 }
 
 body {
   width: 80%;
   margin: 0 auto;
+  font-family: "Nerko One", cursive;
+  background-color: #acedef;
+  text-shadow: 2px 2px darkgrey;
 }
 
 /* titolo */
@@ -28,74 +28,37 @@ header > h1 {
 
 /* main */
 
-main {
-  width: auto;
-  height: 70%;
-  margin: auto;
-}
 
+.container{
+  text-align: center;
+}
 .mega_div {
-  position: relative;
-  width: 1025px;
-  margin: auto;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
-
 .riga {
-  width: 1025px;
-  height: 300px;
+  width: 100%;
+  height: 250px;
   margin: auto;
 }
 
 /* CARTE */
 
-.riga div:first-child {
-  left: 5px;
-}
-
-.riga div:nth-child(2) {
-  left: 260px;
-}
-
-.riga div:nth-child(3) {
-  right: 260px;
-}
-
-.riga div:last-child {
-  right: 5px;
-}
-
-.riga > .memo, .memo > img, .pattern {
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  border-radius: 10px;
-  transition-duration: 0.2s;
-  transform-style: preserve-3d;
-  box-shadow: 3px 3px darkgrey;
-}
-
-.back > img{
-  position: absolute;
+.memo {
   display: inline-block;
-  background-color: white;
-  width: 200px;
-  height: 200px;
-  left: 30px;
-  top: 10px
+  width: 20%;
+  height: 100%;
+  margin: 5px 5px;
+  border-radius: 5px;
+  background-image: url(../img/pattern.png);
+  background-repeat: repeat;
 }
-
-.memo:hover {
-  transform: rotateY(180deg);
-}
-
 .back {
-  color: red;
-  background-color: white;
-  height: 250px;
-  border-radius: 10px;
-  transform: rotateY(180deg);
+  display: inline-block;
+  width: 20%;
+  visibility: hidden;
 }
-
 strong {
   position: absolute;
   background: rgba(0, 0, 0, 0);
@@ -111,7 +74,6 @@ footer {
   height: 10%;
   text-align: center;
 }
-
 footer > h4 {
   font-size: 20px;
 }
