@@ -46,25 +46,41 @@ header > h1 {
 /* CARTE */
 
 .memo {
+  position: relative;
   display: inline-block;
-  width: 20%;
-  height: 100%;
+  width: 240px;
+  height: 240px;
   margin: 5px 5px;
-  border-radius: 5px;
+  border-radius: 10px;
+  text-align: center;
   background-image: url(../img/pattern.png);
   background-repeat: repeat;
+  background-size: contain;
 }
-.back {
-  display: inline-block;
-  width: 20%;
+img {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
   visibility: hidden;
 }
 strong {
   position: absolute;
   background: rgba(0, 0, 0, 0);
   font-size: 20px;
-  bottom: 10%;
-  left: 25%;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.memo.active img,
+.memo:hover img {
+  visibility: visible;
+}
+.memo.active,
+.memo:hover {
+  background-image: none;
+}
+.memo:hover strong {
+  visibility: visible;
 }
 
 /* footer */
