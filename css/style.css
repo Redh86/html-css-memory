@@ -65,11 +65,29 @@ img {
 }
 strong {
   position: absolute;
+  color: red;
   background: rgba(0, 0, 0, 0);
   font-size: 20px;
+  bottom: 5px;
+  left: 120px;
+  text-shadow: 10px;
+  transform: translate( -50%, -50%);
   visibility: hidden;
   z-index: 999;
 }
+.active strong{
+  position: absolute;
+  color: red;
+  background: rgba(0, 0, 0, 0);
+  font-size: 20px;
+  bottom: 1px;
+  left: 120px;
+  text-shadow: 10px;
+  transform: translate( -50%, -50%);
+  visibility:visible;
+  z-index: 999;
+}
+
 
 .memo.active img,
 .memo:hover img {
